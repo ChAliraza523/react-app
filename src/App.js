@@ -8,8 +8,6 @@ const App = () => {
     <div>
       <RouteConfig />
       <Form />
-      <Button value={'click'}/>
-      <Button value={'click here'}/>
     </div>
   )
 }
