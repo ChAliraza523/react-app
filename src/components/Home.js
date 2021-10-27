@@ -2,19 +2,23 @@ import React, { useEffect,useState } from 'react'
 import { useHistory } from 'react-router'
 import Text from './Text';
 import Button from './Button';
+import axios from 'axios';
 
 const Home = () => {
     const history=useHistory();
-    const [state, setState] = useState('')
+    //const [post, setPost] = useState([])
     
-    useEffect(()=>{
-        setTimeout(() => {
-            // history.push('./about')
-        }, 1000);
-    },[])
+    
+    // useEffect(()=>{
+    //     axios.get("https://jsonplaceholder.typicode.com/posts").then(   (response)=>{
+    //         setPost(response.data)
+
+
+    //     });
+    // },[])
     return (
         <div>
-            {state}
+        {/* {console.log(post,'sfsfdf')} */}
             <h1>this is home page</h1>
             <button onClick={()=>history.push('./about')}>change route</button>
             <Text
